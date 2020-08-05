@@ -1,0 +1,9 @@
+# Sample 'Hello World' playbook for network devices with no fact gathering
+---
+- name: "HELLO WORLD SAMPLE"
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: "HELLO WORLD PRINT"
+      debug:
+        msg: "Hello World!"
